@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Noel Emaas - Registration Form</title>
+</head>
+<body>
+    <form>
+        <h1>Registration Form</h1>
+
+            <p id="success-warning" class="input-warning"></p>
+
+            First Name: <br/>
+            <input type="text" name="firstname"/><br/>
+
+            Last Name: <br>
+            <input type="text" name="lastname"/><br/>
+
+            Nick Name: <br>
+            <input type="text" name="nickname"/><br/>
+
+            Email: <br>
+            <input type="email" name="email"/><br/>
+
+            Password: <br>
+            <input id="password" type="password" name="password"/><br/>
+            <p id="password-warning" class="input-warning"></p>
+
+            Date of Birth: <br>
+            <input id="birthdate" type="date" name="bday"/><br/>
+            <p id="age-warning" class="input-warning"></p>
+
+            Gender: <br>
+            <input type="radio" name="male" value="male">Male
+                <input type="radio" name="female" value="female">Female
+                <input type="radio" name="other" value="other">Other<br/>
+
+            Mobile: <br>
+            <input type="tel" name="mobile" /><br/>
+
+            Address: <br>
+            <textarea name="address" cols="21" rows="6"></textarea><br/>
+
+        <input id="submit" type="button" name="submit" value="Submit" onclick="formInputValidation()"/>
+        <input id="reset" type="reset" name="reset" value="Reset" onclick="resetInputForm()"/>
+
+    </form>
+</body>
+</html>
